@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 10:43:34 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/17 11:20:34 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/17 14:34:09 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,7 @@ char	*ft_strstr(const char *str, const char *to_find)
 				k++;
 			}
 			if (to_find[k] == '\0')
-				return ((char *)(void *)&str[i]);
-			i = j;
+				return ((char *)(void *)&str[j]);
 			k = 0;
 		}
 		if (to_find[k] == 0)
