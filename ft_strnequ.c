@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/20 12:45:09 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 15:33:18 by gkuraite         ###   ########.fr       */
+/*   Created: 2017/11/20 15:33:43 by gkuraite          #+#    #+#             */
+/*   Updated: 2017/11/20 15:40:14 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(const char *s)
+int		ft_strnequ(const char *s1, const char *s2, size_t n)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	return (!ft_strncmp(s1, s2, n));
 }
