@@ -6,8 +6,20 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:45:48 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 12:45:50 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/21 09:02:14 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_putstr_fd(char const *s, int fd)
+{
+	int		i;
+
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 11:23:02 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 15:35:56 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/21 12:17:11 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 # include <string.h>
 # include <unistd.h>
 
-//void		*ft_memset(void *b, int c, size_t len);
-//void		ft_bzero(void *s, size_t n);
+void		*ft_memset(void *str, int c, size_t n);
+void		ft_bzero(void *s, size_t n);
 //void		*ft_memcpy(void *dst, const void *src, size_t n);
 //void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 //void		*ft_memmove(void *dst, const void*src, size_t len);
@@ -56,7 +56,7 @@ int			ft_toupper(int c);
 //char		*ft_strmap(char const *s, char (*f)(char));
 //char		ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
-int		ft_strnequ(const char *s1, const char *s2, size_t n);
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
 //char		*ft_strsub(char const *s, unsigned int start, size_t len);
 //char		*ft_strjoin(char const *s1, char const *s2);
 //char		*ft_strtrim(char const *s);
@@ -65,12 +65,12 @@ int		ft_strnequ(const char *s1, const char *s2, size_t n);
 
 void		ft_putchar(char c);
 void		ft_putstr(char const *s);
-void		ft_putendl(const char *s);
+void		ft_putendl(char const *s);
 void		ft_putnbr(int n);
-//void		ft_putchar_fd(char c, int fd);
-//void		ft_putstr_fd(char const *s, int fd);
-//void		ft_putendl_fd(char const *s, int fd);
-//void		ft_putnbr_fd(int n, int fd);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putstr_fd(char const *s, int fd);
+void		ft_putendl_fd(char const *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
 
 //t_list	*ft_lstnew(void const *content, size_t content_size);
 //void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));

@@ -6,13 +6,13 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:45:09 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 15:33:18 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/21 09:19:19 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(const char *s)
+void	ft_putendl(char const *s)
 {
 	ft_putstr(s);
 	ft_putchar('\n');
