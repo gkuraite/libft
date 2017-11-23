@@ -6,8 +6,14 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:41:03 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 12:41:05 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/23 19:52:17 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_memdel(void **ap)
+{
+	free(*ap);
+	*ap = NULL;
+}

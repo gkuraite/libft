@@ -6,8 +6,14 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:41:43 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 12:41:45 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/23 19:38:39 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_strdel(char **as)
+{
+	free(*as);
+	*as = NULL;
+}

@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:46:28 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/21 09:24:03 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/23 18:23:35 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		ft_putchar_fd('-', fd);
 		nb = -nb;
-		n = -n;
 	}
 	str = nb % 10 + '0';
 	if (nb > 9)

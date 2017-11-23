@@ -6,8 +6,17 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:39:43 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 12:39:46 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/23 12:09:52 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s != '\0' && *s != (char)c)
+		s++;
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
+}
