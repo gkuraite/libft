@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 08:48:54 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/23 19:52:08 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/24 17:55:07 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,6 @@
 
 void	ft_putstr(char const *s)
 {
-	int		i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
+	if (s)
+		write(1, s, ft_strlen(s));
 }

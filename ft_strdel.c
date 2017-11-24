@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:41:43 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/23 19:38:39 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/24 14:53:26 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_strdel(char **as)
 {
-	free(*as);
-	*as = NULL;
+	if (as != NULL)
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

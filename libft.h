@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 11:23:02 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/23 19:41:33 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/24 19:39:40 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
-//void		*ft_memalloc(size_t size);
+void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
-//char		*ft_strnew(size_t size);
+char	*ft_strnew(size_t size);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 //void		ft_striter(char *s, void (*f)(char *);
