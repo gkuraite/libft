@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:35:52 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/22 12:06:33 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/25 13:33:05 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	size_t		i;
 	char		*ptr1;
 	const char	*ptr2;
 
 	ptr1 = (char *)dst;
 	ptr2 = (const char *)src;
-	i = 0;
-	while (i < n)
+	while (n)
 	{
-		ptr1[i] = ptr2[i];
-		i++;
+		*ptr1 = *ptr2;
+		ptr1++;
+		ptr2++;
+		n--;
 	}
 	return (dst);
 }
