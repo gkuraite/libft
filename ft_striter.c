@@ -6,8 +6,19 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:42:16 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/20 12:42:20 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/27 13:59:51 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_striter(char *s, void (*f)(char *))
+{
+	if (s == NULL || f == NULL)
+		return ;
+	while (*s != '\0')
+	{
+		f(s);
+		s++;
+	}
+}
