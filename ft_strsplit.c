@@ -6,21 +6,21 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:44:28 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/28 15:46:24 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/29 17:10:34 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_word(char const *s, char c)
+static int		ft_word(char const *s, char c)
 {
-	int		i;
-	int		word;
+	unsigned long	i;
+	unsigned long	word;
 
 	i = 0;
 	word = 0;
-	if )s == NULL)
-		return (NULL);
+	if (s == NULL)
+		return (0);
 	while (i < (ft_strlen(s) + 1))
 	{
 		while (s[i] == c)
@@ -34,22 +34,28 @@ int		ft_word(char const *s, char c)
 	return (word);
 }
 
-char	**ft_strsplit(char ocnst *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
-	int		i;
-	int		j;
-	int		k;
-	char	**split;
-	
+	unsigned long	i;
+	unsigned long	j;
+	unsigned long	k;
+	char			**split;
+
 	i = 0;
 	j = 0;
 	k = 0;
 	if (s == NULL)
 		return (NULL);
-	if (!(split = (char **)maloc(sizeof(*split) * (ft_word(s, c) + 1))))
+	if (!(split = (char **)malloc(sizeof(*split) * (ft_word(s, c) + 1))))
 		return (NULL);
 	while (i < ft_strlen(s))
 	{
-		if (s[i] == c && s[i +1} != c)
+		if (s[i] == c && s[i + 1] != c)
 			j = i + 1;
-	else if ((s[i] != c && s[i + 1] == c) ||
+		else if ((s[i] != c && s[i + 1] == c) || i == ft_strlen(s) - 1)
+			split[k++] = ft_strsub(s, j, (i + 1 - j));
+		i++;
+	}
+	split[k] = 0;
+	return (split);
+}
