@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:44:28 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/29 17:10:34 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/30 19:18:37 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int		ft_word(char const *s, char c)
 	return (word);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	unsigned long	i;
 	unsigned long	j;

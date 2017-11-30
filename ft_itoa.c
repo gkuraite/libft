@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 12:44:44 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/29 17:48:13 by gkuraite         ###   ########.fr       */
+/*   Updated: 2017/11/30 19:17:14 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int		ft_intlen(int nb)
 	return (index);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*str;
 	int		index;
