@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 10:55:02 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/24 15:39:39 by gkuraite         ###   ########.fr       */
+/*   Updated: 2018/02/15 19:13:59 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *src)
 	int		range;
 	char	*str;
 
+	if (!src)
+		return (NULL);
 	range = 0;
 	i = 0;
 	while (src[range])

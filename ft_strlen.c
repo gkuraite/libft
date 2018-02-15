@@ -6,7 +6,7 @@
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 10:50:46 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/11/23 12:20:13 by gkuraite         ###   ########.fr       */
+/*   Updated: 2018/02/15 19:13:25 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 size_t		ft_strlen(const char *str)
 {
-	int		i;
+	size_t	i;
 
+	if (!str)
+		return (0);
 	i = 0;
 	while (str[i] != '\0')
 		i++;
