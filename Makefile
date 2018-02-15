@@ -6,7 +6,7 @@
 #    By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/16 08:57:04 by gkuraite          #+#    #+#              #
-#    Updated: 2017/11/29 15:05:19 by gkuraite         ###   ########.fr        #
+#    Updated: 2018/02/15 15:31:42 by gkuraite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	  ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlen.c ft_strmap.c \
 	  ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c ft_strnequ.c \
 	  ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c ft_strstr.c \
-	  ft_strsub.c ft_strtrim.c ft_tolower.c 
+	  ft_strsub.c ft_strtrim.c ft_tolower.c ft_strnjoin.c
 
 OBJ = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
 	  ft_isdigit.o ft_isprint.o ft_itoa.o ft_lstadd.o ft_lstdel.o \
@@ -38,7 +38,7 @@ OBJ = ft_atoi.o ft_bzero.o ft_isalnum.o ft_isalpha.o ft_isascii.o \
 	  ft_strlen.o ft_strmap.o ft_strmapi.o ft_strncat.o ft_strncmp.o \
 	  ft_strncpy.o ft_strnequ.o ft_strnew.o ft_strnstr.o ft_strrchr.o \
 	  ft_strsplit.o ft_strstr.o ft_strsub.o ft_strtrim.o ft_tolower.o \
-	  ft_toupper.o ft_memcpy.o
+	  ft_toupper.o ft_memcpy.o ft_strnjoin.o
 
 all: $(NAME)
 

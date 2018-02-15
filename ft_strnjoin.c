@@ -1,18 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strnjoin.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/20 08:44:52 by gkuraite          #+#    #+#             */
-/*   Updated: 2017/12/01 13:08:25 by gkuraite         ###   ########.fr       */
+/*   Created: 2018/02/15 15:19:54 by gkuraite          #+#    #+#             */
+/*   Updated: 2018/02/15 15:33:06 by gkuraite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar(char c)
+char	*ft_strnjoin(char *s1, char *s2, int n)
 {
-	write(1, &c, 1);
+	int		line1;
+	int		line2;
+	char	*ret;
+
+	line1 = 0;
+	line2 = 0;
+	if (!(ret = ft_strnew(ft_strlen(s1) + n + 1)))
+		return (NULL);
+	while (s1[line1])
+	{
+		ret[line1] = s1[line1];
+		line1++;
+	}
+	while (s2[line2] && line2 < n)
+		ret[line1++] = s2[line2++];
+	ret[line1] = 0;
+	return (ret);
 }
