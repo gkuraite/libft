@@ -23,14 +23,12 @@ int		main(void)
 	printf("atoi: %d\n", atoi("\t\n\v\f\r 42"));
 	printf("ft_atoi: %d\n", ft_atoi("12345678901"));
 	printf("atoi: %d\n", atoi("12345678901"));
-	printf("ft_atoi: %d\n", ft_atoi("12345678901234567890"));
-	printf("atoi: %d\n", atoi("12345678901234567890"));
 	printf("ft_atoi: %d\n", ft_atoi("-00000000000000000000000000050"));
 	printf("atoi: %d\n", atoi("-0000000000000000000000000000050"));
 	printf("ft_atoi: %d\n", ft_atoi("0xFF"));
 	printf("atoi: %d\n", atoi("0xFF"));
 	printf("ft_atoi: %d\n", ft_atoi("-1234567890123456789"));
 	printf("atoi: %d\n", atoi("-1234567890123456789"));
-	printf("ft_atoi: %d\n", ft_atoi("12345678901234567890")); // returns
-	printf("atoi: %d\n", atoi("12345678901234567890"));	
+	printf("ft_atoi: %d\n", ft_atoi("12345678901234567890")); // returns -350287150
+	printf("atoi: %d\n", atoi("12345678901234567890")); // returns -1
 }
