@@ -6,7 +6,7 @@
 #    By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/16 08:57:04 by gkuraite          #+#    #+#              #
-#    Updated: 2018/02/15 15:31:42 by gkuraite         ###   ########.fr        #
+#    Updated: 2018/07/25 13:57:17 by gkuraite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,18 +34,18 @@ all: $(NAME)
 $(NAME): $(OBJ)
 		@ar rc $(NAME) $(OBJ)
 		@ranlib $(NAME)
-		@printf "\r\\033[1;32mDone!\033[0m\n"
+		@echo "\r\\033[1;32mDone!\033[0m"
 
 %.o: %.c
 		@gcc $(FLAGS) -c -o $@ $< -I./includes
 
 clean:
 		@rm -rf $(OBJ)
-		@printf "\r\033[1;31mCleaned .o!\033[0m\n"
+		@echo "\r\033[1;31mCleaned .o!\033[0m"
 
 fclean: clean
 		@rm -rf $(NAME)
-		@printf "\r\033[1;31mCleaned .a!\033[0m\n"
+		@echo "\r\033[1;31mCleaned .a!\033[0m"
 
 re: fclean all
 
