@@ -6,7 +6,7 @@
 #    By: gkuraite <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/16 08:57:04 by gkuraite          #+#    #+#              #
-#    Updated: 2018/07/25 13:57:17 by gkuraite         ###   ########.fr        #
+#    Updated: 2018/07/25 20:02:47 by gkuraite         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,4 +49,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re
+.PHONY: clean fclean re all
